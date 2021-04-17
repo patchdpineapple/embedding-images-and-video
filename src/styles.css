@@ -1,11 +1,170 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
+
+/* RESET */
 * {
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
     line-height: 1.15;
     -webkit-text-size-adjust: 100%;
     font-family: 'Roboto', sans-serif;
 }
 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+body {
+    line-height: 1;
+    background-color: #f3f3f3;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+button {
+    display: inline;
+    cursor: pointer;
+	border: none;
+    text-decoration: none;
+    padding: 0;
+    background-color: transparent;
+}
+  
+ button:focus {
+    outline: none;
+  }
+
+/* Material icons css */
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;  /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+  
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+  
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+  
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+  }
+
+/* CSS */
+/* Navigation bar*/
+.nav-bar {
+    position: fixed;
+    background-color: white;
+    min-height: 56px;
+    width: 100vw;
+    padding: 0 16px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border-bottom: 1px solid #e9e9e9;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+.logo {
+    display: block;
+    height: 24px;
+    width: 80px;
+    margin: 0 20px;
+}
+
+.search-container {
+    width: 50%;
+}
+
+.search-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    background-color: transparent;
+    width: 100%;
+
+}
+
+.input-search, .btn-search {
+    height: 30px;
+    border: 1px solid #ccc;
+}
+
+.input-search {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+
+.btn-search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.input-search:focus {
+    border-color: steelblue;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.5) inset;
+}
+
+.btn-search {
+    background-color: rgb(240, 240, 240);
+    padding: 0 23px;
+    font-size: 18px !important;
+    color: rgba(95, 95, 95, 0.87);
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    transition: all .01s ease;
+    border-left: none
+}
+
+.btn-search:hover {
+    color: #1b1b1b;
+    background-color: rgb(230, 230, 230);
+
+}
+
+/* Main */
+
+/* Comments */
