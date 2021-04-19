@@ -11,7 +11,7 @@
     <title>YouTube</title>
   </head>
   <body>
-    <!-- Navigation bar -->
+    <!-- NAVIGATION BAR -->
     <header>
       <nav class="nav-bar">
         <div class="logo-container">
@@ -101,10 +101,11 @@
         </div>
       </nav>
     </header>
-    <!-- Video Player -->
-    <div class="main-container">
+    <!-- VIDEO PLAYER -->
+    <main class="main-container">
       <div class="video-page-container">
-        <main class="video">
+        <section class="video">
+          <!-- Embed video player -->
           <iframe
             width="700"
             height="400"
@@ -114,8 +115,11 @@
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen
           ></iframe>
+          <!-- Title and Stats -->
           <div class="title-container">
-            <span class="title">Super Mario World Game Over LoFi Hip Hop Remix</span>
+            <span class="title"
+              >Super Mario World Game Over LoFi Hip Hop Remix</span
+            >
             <div class="stats flex-center">
               <span class="views">18,229,344 views • Sep 7, 2017</span>
               <div class="stats-buttons flex-center">
@@ -130,7 +134,7 @@
                   </div>
                 </div>
                 <div class="share flex-center">
-                  <span class="material-icons icon-share">reply</span> 
+                  <span class="material-icons icon-share">reply</span>
                   <span class="stat-text">SHARE</span>
                 </div>
                 <div class="save flex-center">
@@ -141,21 +145,41 @@
                   <span class="material-icons"> more_horiz </span>
                 </div>
               </div>
-
-              
-
             </div>
           </div>
-          <div class="divider"></div>
-        </main>
+          <!-- Upload info and subscribe -->
+          <div class="info-container">
+            <div class="uploader-container">
+              <div class="uploader">
+                <div class="uploader-photo">
+                  <img
+                    class="img-uploader"
+                    src="https://yt3.ggpht.com/ytc/AAUvwnjVaMbtulZO3BTxwO5OIQIYVXy5Ozs6gAQseXkjsw=s48-c-k-c0x00ffffff-no-rj"
+                    width="48"
+                    alt=""
+                  />
+                </div>
+                <div class="uploader-info flex-center">
+                  <span class="name">Phillip Schlosser [HephestosMusic]</span>
+                  <span class="subscribers">32K Subscribers</span>
+                </div>
+              </div>
+              <div class="subscribe-container flex-center">
+                <button class="btn-subscribe">SUBSCRIBE</button>
+              </div>
+            </div>
+            <div class="description">
+              <span>Instrumental Hip Hop/Trip Hop (i think its called lofi hip hop now) Remix of the Game Over Theme from Super Mario World (SNES).</span>
+              <button>SHOW MORE</button>
+            </div>
+          </div>
+        </section>
+        <!-- THUMBNAILS -->
         <aside class="thumbnails"></aside>
-        <div class="comments"></div>
+        <!-- COMMENTS -->
+        <section class="comments"></section>
       </div>
-    </div>
-
-    <!-- Comments -->
-    <!-- Video thumbnails -->
-
+    </main>
     <script src="./src/index.js"></script>
   </body>
 </html>
